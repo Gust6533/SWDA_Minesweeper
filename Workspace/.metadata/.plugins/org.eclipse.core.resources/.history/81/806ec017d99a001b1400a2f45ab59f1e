@@ -1,0 +1,11 @@
+
+
+public class Manager {
+	private diffculty currentDifficulty = diffculty.Meduim;
+	private Board gameBoard;
+	
+	Manager(){
+		gameBoard = new Board(currentDifficulty);
+	}
+	
+}

@@ -1,0 +1,57 @@
+Enum 
+	Easy
+	Meduim
+	Hard
+
+Board 
+	-private Boolean mines [30][30]
+	-private int size
+	-private Boolean hasBeenClicked [30][30]
+	-private minesLeft
+	
+	Methods:
+		Board()
+		Board(enum difficulty)
+		Boolean isMine(int x, int y)
+		Boolean beenClicked(int x, int y)
+		void setClicked(int x, int y)
+		int numberOfMinesLeft()
+
+Manager
+	-private currentDifficulty
+	-private Board gameBoard
+	
+	Methods
+		Manager()
+		void Restart()
+		void setDifficulty(enum difficulty)
+	
+HighScoreManager
+	-private int list[100]
+	
+	methods
+		HighScoreManager()
+		addHighScore(int high_score)
+		int[] getHighScores()
+		
+
+Timer
+	-private Time current_time
+
+	Mehods
+		timer()
+		startTime()
+		stopTime()
+		getTime()
+	
+Artist
+	
+	Methods
+		Artist(Board toDraw)
+		updateBoard(int *x, int *y)
+		displayHighScore(int[] highScores)
+		displayerTimer(int time)
+		dispalyMinesLeft()
+		
+		
+		

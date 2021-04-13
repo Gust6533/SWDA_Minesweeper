@@ -1,0 +1,12 @@
+
+public class Timer {
+	private int current_time;
+	private int totalTime;
+	
+	Timer()
+	{
+		totalTime = 0;
+	}
+	
+	startTiu
+}

@@ -1,0 +1,42 @@
+
+import java.util.Random;
+
+
+public class Board {
+private Boolean[][] mines;
+private int size;
+private Boolean[][] hasBeenClicked;
+private int minesLeft;
+
+Board()
+{
+	//set to default of normal
+	mines = new Boolean [20][20];
+	size = 20;
+	hasBeenClicked = new Boolean [20][20];
+	minesLeft = 10;
+	int minesPlaces = minesLeft;
+
+	//set up game board 
+	
+	//set everything to false
+	for(int i = 0; i < size; i ++)
+	{
+		for(int j = 0; j < size; j ++)
+		{
+			hasBeenClicked[i] [j] = false;
+			mines[i] [j] = false;
+		}
+		
+	}
+	
+	// place mines into board 
+	Random rand = new Random();
+	
+	while()
+	int int_random = rand.nextInt(10); 
+	
+}
+
+
+}

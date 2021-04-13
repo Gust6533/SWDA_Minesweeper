@@ -1,0 +1,17 @@
+
+
+public class Timer {
+	private long current_time;
+	private long totalTime;
+	
+	public void Timer()
+	{
+		totalTime = 0;
+	}
+	
+	public void startTimer()
+	{
+		long millis = System.currentTimeMillis();
+		
+	}
+}

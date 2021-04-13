@@ -1,0 +1,58 @@
+
+import java.util.Random;
+
+
+
+public class Board {
+private Boolean[][] mines; //location of the mines
+private int size; //the size of the board
+private Boolean[][] hasBeenClicked; //If the space has been clicked or not
+private int minesLeft; // Number of Mines left on the field
+
+Board()
+{
+	
+}
+
+Board( Diffculty  )
+{
+	//set to default of normal
+	mines = new Boolean [20][20];
+	size = 20;
+	hasBeenClicked = new Boolean [20][20];
+	minesLeft = 10;
+	int minesPlaces = minesLeft;
+	int i, j;
+
+	//set up game board 
+	
+	//set everything to false
+	for(i = 0; i < size; i ++)
+	{
+		for(j = 0; j < size; j ++)
+		{
+			hasBeenClicked[i] [j] = false;
+			mines[i] [j] = false;
+		}
+		
+	}
+	
+	// place mines into board 
+	Random rand = new Random();
+	
+	while(minesPlaces > 0)
+	{
+		i = rand.nextInt(size);
+		j = rand.nextInt(size);
+		if (mines[i][j] == false)
+		{
+			mines[i][j] = true;
+			minesPlaces --;
+		}
+	}
+	 
+	
+}
+
+
+}

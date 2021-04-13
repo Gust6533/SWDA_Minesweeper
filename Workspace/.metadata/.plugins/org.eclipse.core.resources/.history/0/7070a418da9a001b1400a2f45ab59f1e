@@ -1,0 +1,9 @@
+
+public class HighScoreManager {
+	private int list[];
+	
+	public HighScoreManager()
+	{
+		list = new int [100];
+	}
+}

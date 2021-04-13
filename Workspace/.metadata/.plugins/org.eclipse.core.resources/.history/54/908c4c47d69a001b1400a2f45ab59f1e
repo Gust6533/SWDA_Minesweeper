@@ -1,0 +1,12 @@
+
+public class Board {
+private Boolean[][] mines;
+private int size;
+
+Board()
+{
+	mines = new Boolean [30][30];
+}
+
+
+}

@@ -1,0 +1,6 @@
+
+public class Timer {
+	private int current_time;
+	
+	
+}

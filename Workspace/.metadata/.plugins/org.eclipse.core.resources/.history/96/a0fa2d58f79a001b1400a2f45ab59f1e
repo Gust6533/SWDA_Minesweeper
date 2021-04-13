@@ -1,0 +1,45 @@
+
+
+public class Manager {
+	private diffculty currentDifficulty = diffculty.Meduim;
+	private static Board gameBoard;
+	private static Artist artist;
+	
+	public Manager(){
+		gameBoard = new Board(currentDifficulty);
+		artist = new Artist(gameBoard);
+	}
+	
+	public void restart()
+	{
+		gameBoard = new Board(currentDifficulty);
+	}
+	
+	public void setDifficulty(diffculty dif)
+	{
+		currentDifficulty = dif;
+		gameBoard = new Board(currentDifficulty);
+	}
+	
+	static public void buttonPress(int x, int y)
+	{
+		//check if mine
+		if ( gameBoard.isMine(x,y) == true)
+		{
+			artist.drawLose();
+			System.out.println("lOST");
+		}
+	}
+	
+	
+	
+
+	
+	public static void main(String[] args)
+	{
+		Manager m = new Manager();
+		
+	}
+	
+	 
+}

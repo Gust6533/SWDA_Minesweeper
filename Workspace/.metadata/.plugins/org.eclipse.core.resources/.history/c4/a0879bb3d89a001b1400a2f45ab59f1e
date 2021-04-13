@@ -1,0 +1,11 @@
+import Board.java
+
+public class Manager {
+	private diffculty currentDifficulty = diffculty.Meduim;
+	private Board gameBoard;
+	
+	Manager(){
+		gameBoard = Board(currentDifficulty);
+	}
+	
+}
