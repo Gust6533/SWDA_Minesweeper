@@ -4,7 +4,7 @@ public class Timer {
 	private long current_time; //in milliseconds
 	private long totalTime; //in milliseconds
 	
-	public void Timer()
+	public Timer()
 	{
 		totalTime = 0;
 	}

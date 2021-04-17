@@ -1,4 +1,5 @@
 
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -6,13 +7,16 @@ import javax.swing.*;
 
 public class Artist {
 
-	private JButton array[][];
+	//TODO add timer display
+	private JToggleButton  array[][];
 	private JFrame f;
 	private JButton highscoreButton;
 	private JButton restartButton;
 	private JButton stopTimerButton;
 	private JButton ChangeDifButton;
 	private JButton timerDisplay;
+
+	
 	
 	public Artist(Board toDraw){
 		//draw the Board up right away
@@ -34,13 +38,17 @@ public class Artist {
 		
 		//create all of the gird buttons
 		f=new JFrame();//creating instance of JFrame  
-		array = new JButton [size][size];
+		array = new JToggleButton  [size][size];
+		
 		for(int i = 0; i < size; i++)
 		{
 			for(int j = 0; j < size; j++)
 			{
-				JButton b=new JButton(Integer.toString(i) + "," + Integer.toString(j));//creating instance of JButton  
+				
+				JToggleButton  b=new JToggleButton (Integer.toString(i) + "," + Integer.toString(j));//creating instance of JButton  
 				b.setBounds((i * 15 ) + 30,(j * 15 ) + 180, 10, 10);//x axis, y axis, width, height  
+				Dimension d = new Dimension(10, 10);
+				b.setSize(d);
 				b.addActionListener(actionListener);
 				f.add(b);//adding button in JFrame  
 				array[i][j] = b;
@@ -83,14 +91,14 @@ public class Artist {
 	}
 	
 	//used to determine when a button is pressed
-	//TODO???? -- figure out a way to move this class to the manager instead
+	//TODO???? -- figure out a way to move this class to the manager instead -- don't actual have to do this
 	ActionListener actionListener = new ActionListener() 
 	{
 	    public void actionPerformed(ActionEvent actionEvent) {
 	       
 	    	
 	        String command = actionEvent.getActionCommand();
-	        
+	        System.out.println("command at: "+ command );
 	        //figure out the command and act on it
 	        // gird buttons have a comma in them
 	        if(command.contains(","))
@@ -143,7 +151,7 @@ public class Artist {
 		}
 
 		private void displayHighScores() {
-			// TODO Auto-generated method stub
+			//TODO actually display highscores
 			
 		}
 	};
@@ -165,16 +173,29 @@ public class Artist {
 		f.remove(array[x][y]);
 		
 		array[x][y] = null;
-		Icon icon = new ImageIcon("icon 1.jpg");
-		JButton b = new JButton(Integer.toString(x) + "," + Integer.toString(y),icon );//creating instance of JButton  
-	
-		b.setBounds((x * 15 ) + 30,(y * 15 ) + 30, 10, 10);//x axis, y axis, width, height  
+		//TODO add icons of correct size and then using mines set the correct of the image of the button
+		// mines is the number needing to be displayed and should be drawn
+		ImageIcon icon1 = createImageIcon("icon 1.png", "1");
+		JToggleButton  b = new JToggleButton (Integer.toString(x) + "," + Integer.toString(y),icon1 );//creating instance of JButton  
+		//redraw button in the correct place
+		b.setBounds((x * 15 ) + 30,(y * 15 ) + 180, 10, 10);//x axis, y axis, width, height  
 		b.addActionListener(actionListener);
 		f.add(b);//adding button in JFrame  
 		array[x][y] = b;
 		return;
 	}
 	
+	/** Returns an ImageIcon, or null if the path was invalid. */
+	protected ImageIcon createImageIcon(String path,
+	                                           String description) {
+	    java.net.URL imgURL = getClass().getResource(path);
+	    if (imgURL != null) {
+	        return new ImageIcon(imgURL, description);
+	    } else {
+	        System.err.println("Couldn't find file: " + path);
+	        return null;
+	    }
+	}
 	
 	
 	

@@ -52,6 +52,7 @@ public class Manager {
 		{
 			time.stopTimer();
 			artist.drawWin(time.getTime());
+			//TODO update to add high score to the list
 			Manager.restart();
 		}
 		else
@@ -59,6 +60,7 @@ public class Manager {
 
 			//determine number of mines around and report back
 			mines = gameBoard.minesNextTo(x, y);
+			System.out.println("Updating Number to: " + Integer.toString(mines) );
 			artist.updateLocationNumber(x, y, mines);
 			//populate all the around areas if there are no mines near
 			if (mines == 0)
