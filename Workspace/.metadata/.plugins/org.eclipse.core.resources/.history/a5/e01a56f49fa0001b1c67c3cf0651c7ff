@@ -76,10 +76,6 @@ public class Artist {
 		
 		//timer display
 		//TODO
-		JButton showTimerButton =new JButton("Show Timer");//creating instance of JButton  
-		showTimerButton.setBounds(140,90,120, 60);//x axis, y axis, width, height  
-		showTimerButton.addActionListener(actionListener);
-		f.add(showTimerButton);//adding button in JFrame  	
 		
 		//change difficulty
 		JButton ChangeDifButton =new JButton("Change Diffculty");//creating instance of JButton  
@@ -125,12 +121,6 @@ public class Artist {
 	        else if(command.contains("Change Diffculty"))
 	        {
 	        	this.changeDiffculty();
-	        }
-	        else if(command.contains("Show Timer"))
-	        {
-	        	Timer time = new Timer();
-	        	time.getTime();	        	
-	        	
 	        }
 	    }
 

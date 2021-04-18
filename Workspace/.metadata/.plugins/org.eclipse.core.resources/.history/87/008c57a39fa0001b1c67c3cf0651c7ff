@@ -5,13 +5,11 @@ public class Manager {
 	private static Board gameBoard;
 	private static Artist artist;
 	private static Timer time; 
-	private static HighScoreManager highScore;
 	
 	public Manager(){
 		gameBoard = new Board(currentDifficulty);
 		time = new Timer();
 		artist = new Artist(gameBoard);
-		highScore = new HighScoreManager();
 		
 		time.startTimer();
 	}
@@ -54,7 +52,6 @@ public class Manager {
 		{
 			time.stopTimer();
 			artist.drawWin(time.getTime());
-			highScore.getHighScores();
 			//TODO update to add high score to the list -CK
 			Manager.restart();
 		}

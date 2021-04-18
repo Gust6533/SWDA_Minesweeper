@@ -77,7 +77,7 @@ public class Artist {
 		//timer display
 		//TODO
 		JButton showTimerButton =new JButton("Show Timer");//creating instance of JButton  
-		showTimerButton.setBounds(140,90,120, 60);//x axis, y axis, width, height  
+		showTimerButton.setBounds(140,10,120, 60);//x axis, y axis, width, height  
 		showTimerButton.addActionListener(actionListener);
 		f.add(showTimerButton);//adding button in JFrame  	
 		
