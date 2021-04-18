@@ -52,7 +52,7 @@ public class Manager {
 		{
 			time.stopTimer();
 			artist.drawWin(time.getTime());
-			//TODO update to add high score to the list -CK
+			//TODO update to add high score to the list
 			Manager.restart();
 		}
 		else
