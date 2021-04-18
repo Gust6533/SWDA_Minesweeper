@@ -10,6 +10,12 @@ public class Artist {
 	//TODO add timer display
 	private JToggleButton  array[][];
 	private JFrame f;
+	private JButton highscoreButton;
+	private JButton restartButton;
+	private JButton stopTimerButton;
+	private JButton ChangeDifButton;
+	private JButton timerDisplay;
+
 	
 	
 	public Artist(Board toDraw){
