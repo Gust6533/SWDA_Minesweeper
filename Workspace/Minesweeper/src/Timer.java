@@ -17,15 +17,16 @@ public class Timer {
 	public void stopTimer()
 	{
 		long i = System.currentTimeMillis();
-		System.out.println(i);
 		totalTime += i - current_time;
-		System.out.println(totalTime);
+		
 	}
 	
 	//returns in seconds of total timer the timer was running
 	public long getTime() 
 	{
-		System.out.println(totalTime);
+		this.stopTimer();
+		this.startTimer();
+		//System.out.println("TotalTimeTaken"+totalTime / 1000);
 		return totalTime / 1000;
 	}
 	

@@ -1,10 +1,11 @@
 
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;  
-
+import javax.swing.*;
 public class Artist {
 
 	//TODO add timer display
@@ -68,12 +69,12 @@ public class Artist {
 		stopTimerButton.addActionListener(actionListener);
 		f.add(stopTimerButton);//adding button in JFrame  	
 		
-		//timer display
-		//TODO
+	    //timer display
 		JButton showTimerButton =new JButton("Show Timer");//creating instance of JButton  
 		showTimerButton.setBounds(140,90,120, 60);//x axis, y axis, width, height  
 		showTimerButton.addActionListener(actionListener);
-		f.add(showTimerButton);//adding button in JFrame  	
+		f.add(showTimerButton);//adding button in JFrame  
+				 
 		
 		//change difficulty
 		JButton ChangeDifButton =new JButton("Change Diffculty");//creating instance of JButton  
@@ -121,11 +122,16 @@ public class Artist {
 	        	this.changeDiffculty();
 	        }
 	        else if(command.contains("Show Timer"))
-	        {
-	        	Timer time = new Timer();
-	        	time.getTime();	        	
-	        	
+	        {		        	
+				/*
+				 * JLabel p =new JLabel();//creating instance of JLabel 
+				 * p.setBounds(300,90,120,60);//x axis, y axis, width, height 
+				 * p.setText("Timer"+Manager.displayTime());
+				 * f.add(p);*/
+				 
+	        	JOptionPane.showMessageDialog(f,Manager.displayTime());	        	
 	        }
+	        
 	    }
 
 		private void changeDiffculty() {
@@ -154,10 +160,9 @@ public class Artist {
 			
 		}
 
-		private void displayHighScores() {
-			//TODO actually display highscores
-			HighScoreManager highScore = new HighScoreManager();
-			highScore.getHighScores();
+		private void displayHighScores() 
+		{
+			JOptionPane.showMessageDialog(f,Manager.HighScore().toString());			
 			
 		}
 	};

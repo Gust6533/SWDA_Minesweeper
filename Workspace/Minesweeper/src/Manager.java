@@ -11,8 +11,7 @@ public class Manager {
 		gameBoard = new Board(currentDifficulty);
 		time = new Timer();
 		artist = new Artist(gameBoard);
-		highScore = new HighScoreManager();
-		
+		highScore = new HighScoreManager();		
 		time.startTimer();
 	}
 	
@@ -27,6 +26,18 @@ public class Manager {
 	{
 		currentDifficulty = dif;
 		Manager.restart();
+	}
+	public static Long  displayTime()
+	{
+	 
+	  return time.getTime();
+				
+	}
+	
+	public static int[] HighScore()
+	{
+		
+		return highScore.getHighScores();
 	}
 	
 	 public static void buttonPress(int x, int y)
@@ -55,7 +66,6 @@ public class Manager {
 			time.stopTimer();
 			artist.drawWin(time.getTime());
 			highScore.getHighScores();
-			//TODO update to add high score to the list -CK
 			Manager.restart();
 		}
 		else
@@ -82,11 +92,6 @@ public class Manager {
 			
 		}
 	}
-	
-	
-	
-	 
-
 	
 	public static void main(String[] args)
 	{
