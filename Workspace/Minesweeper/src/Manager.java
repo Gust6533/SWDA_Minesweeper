@@ -19,6 +19,7 @@ public class Manager {
 	{
 		gameBoard = new Board(currentDifficulty);
 		artist.redraw(gameBoard);
+		time = new Timer();
 		time.startTimer();
 	}
 	
@@ -61,9 +62,8 @@ public class Manager {
 			artist.drawLose();
 			Manager.restart();
 		}
-		else if(gameBoard.setClicked(x,y) == 0)
+		else if(gameBoard.setClicked(x,y) == 1)
 		{
-			time.stopTimer();
 			artist.drawWin(time.getTime());
 			highScore.getHighScores();
 			Manager.restart();

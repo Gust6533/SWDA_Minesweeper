@@ -1,0 +1,15 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TEST_Timer {
+//Note for testing there is a mine at 1,1
+	
+	@Test
+	void defaultTimer() {
+		Timer time = new Timer();
+		assertEquals(0, time.getTime(), "default state of unclicked");
+	}
+
+
+}

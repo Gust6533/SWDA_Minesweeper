@@ -1,0 +1,15 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TEST_HighScoreManager {
+//Note for testing there is a mine at 1,1
+	
+	@Test
+	void defaultHighScores() {
+		HighScoreManager highScore = new HighScoreManager();		
+		int list[] =  highScore.getHighScores();
+		assertEquals(1000000, list[0], "default High scores");
+	}
+
+}

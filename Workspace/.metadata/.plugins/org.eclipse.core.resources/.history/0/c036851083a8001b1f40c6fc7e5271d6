@@ -1,0 +1,28 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class BoardTests {
+//Note for testing there is a mine at 1,1
+	
+	@Test
+	void defaultStateNotClicked() {
+		Board gameBoard = new Board(diffculty.Easy);
+		assertEquals(false, gameBoard.beenClicked(0, 0), "default state of unclicked");
+	}
+
+	@Test
+	void ClickedAfterSet() {
+		Board gameBoard = new Board(diffculty.Easy);
+		gameBoard.setClicked(0,0);
+		assertEquals(true, gameBoard.beenClicked(0, 0), "retruns clicked after set");
+	}
+	
+	@Test
+	void IsMineTest() {
+		Board gameBoard = new Board(diffculty.Easy);
+		gameBoard.setClicked(1,1);
+		assertEquals(true, gameBoard.beenClicked(0, 0), "retruns clicked after set");
+	}	
+	
+}

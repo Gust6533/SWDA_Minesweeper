@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BoardTests" project="Minesweeper" tests="13" started="13" failures="0" errors="0" ignored="0">
+  <testsuite name="BoardTests" time="0.056" uniqueid="[engine:junit-jupiter]/[class:BoardTests]">
+    <testcase name="IsMineHighBounds" classname="BoardTests" time="0.02" displayname="IsMineHighBounds()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:IsMineHighBounds()]"/>
+    <testcase name="IsMineNegtiveBounds" classname="BoardTests" time="0.001" displayname="IsMineNegtiveBounds()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:IsMineNegtiveBounds()]"/>
+    <testcase name="testcodeNextToMine00" classname="BoardTests" time="0.001" displayname="testcodeNextToMine00()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:testcodeNextToMine00()]"/>
+    <testcase name="testcodeNextToMine01" classname="BoardTests" time="0.002" displayname="testcodeNextToMine01()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:testcodeNextToMine01()]"/>
+    <testcase name="testcodeNextToMine11" classname="BoardTests" time="0.001" displayname="testcodeNextToMine11()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:testcodeNextToMine11()]"/>
+    <testcase name="testcodeNextToMine21" classname="BoardTests" time="0.001" displayname="testcodeNextToMine21()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:testcodeNextToMine21()]"/>
+    <testcase name="testcodeNextToMine31" classname="BoardTests" time="0.004" displayname="testcodeNextToMine31()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:testcodeNextToMine31()]"/>
+    <testcase name="IsMinetestcode" classname="BoardTests" time="0.001" displayname="IsMinetestcode()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:IsMinetestcode()]"/>
+    <testcase name="defaultStateNotClicked" classname="BoardTests" time="0.001" displayname="defaultStateNotClicked()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:defaultStateNotClicked()]"/>
+    <testcase name="ClickedOutOfBoundsTestabove" classname="BoardTests" time="0.001" displayname="ClickedOutOfBoundsTestabove()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:ClickedOutOfBoundsTestabove()]"/>
+    <testcase name="ClickedOutOfBoundsTestNegtive" classname="BoardTests" time="0.002" displayname="ClickedOutOfBoundsTestNegtive()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:ClickedOutOfBoundsTestNegtive()]"/>
+    <testcase name="ClickedAfterSet" classname="BoardTests" time="0.001" displayname="ClickedAfterSet()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:ClickedAfterSet()]"/>
+    <testcase name="IsMineTest11" classname="BoardTests" time="0.02" displayname="IsMineTest11()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:IsMineTest11()]"/>
+  </testsuite>
+</testrun>

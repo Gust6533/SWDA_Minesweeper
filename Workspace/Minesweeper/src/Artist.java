@@ -162,7 +162,19 @@ public class Artist {
 
 		private void displayHighScores() 
 		{
-			JOptionPane.showMessageDialog(f,Manager.HighScore().toString());			
+			String message = "High Scores: \n";
+			
+			message += Integer.toString(Manager.HighScore()[0]);
+			message += "\n";
+			message += Integer.toString(Manager.HighScore()[1]);
+			message += "\n";
+			message += Integer.toString(Manager.HighScore()[2]);
+			message += "\n";
+			message += Integer.toString(Manager.HighScore()[3]);
+			message += "\n";
+			message += Integer.toString(Manager.HighScore()[4]);
+			message += "\n";
+			JOptionPane.showMessageDialog(f,message);			
 			
 		}
 	};
@@ -186,13 +198,54 @@ public class Artist {
 		array[x][y] = null;
 		//TODO add icons of correct size and then using mines set the correct of the image of the button
 		// mines is the number needing to be displayed and should be drawn
-		ImageIcon icon1 = createImageIcon("icon 1.png", "1");
-		JToggleButton  b = new JToggleButton (Integer.toString(x) + "," + Integer.toString(y),icon1 );//creating instance of JButton  
+		JToggleButton  b;
+		ImageIcon icon1;
+		if(mines == 1)
+		{
+			icon1 = createImageIcon("icon 1.png", "1");
+			 			
+		}
+		else if(mines == 2)
+		{
+			icon1 = createImageIcon("icon 2.jpg", "1");
+		}
+		else if (mines == 3 )
+		{
+			icon1 = createImageIcon("icon 3.jpg", "1");
+		}
+		else if (mines == 4 )
+		{
+			icon1 = createImageIcon("icon 4.jpg", "1");
+		}
+		else if (mines == 5 )
+		{
+			icon1 = createImageIcon("icon 5.jpg", "1");
+		}
+		else if (mines == 6 )
+		{
+			icon1 = createImageIcon("icon 6.jpg", "1");
+		}
+		else if (mines == 7 )
+		{
+			icon1 = createImageIcon("icon 7.jpg", "1");
+		}
+		else if (mines == 8 )
+		{
+			icon1 = createImageIcon("icon 8.jpg", "1");
+		}
+		else
+		{
+			icon1 = createImageIcon("test1.png", "1");	
+		}
+		b = new JToggleButton (Integer.toString(x) + "," + Integer.toString(y),icon1 );//creating instance of JButton 
 		//redraw button in the correct place
 		b.setBounds((x * 15 ) + 30,(y * 15 ) + 180, 10, 10);//x axis, y axis, width, height  
 		b.addActionListener(actionListener);
 		f.add(b);//adding button in JFrame  
 		array[x][y] = b;
+		f.invalidate();
+		f.validate();
+		f.repaint();
 		return;
 	}
 	
