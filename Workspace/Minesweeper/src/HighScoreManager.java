@@ -8,13 +8,10 @@ public class HighScoreManager {
 		list = new int [size];
 		for(int i = 0; i < size; i++)
 		{
-<<<<<<< HEAD
 			list[i] = 0;
 			System.out.println("Check Here"+list);
-=======
 			list[i] = 1000000;
 			//System.out.println("Check Here"+list);
->>>>>>> acf5a42ce69f1cfc088724b932022976060dc94b
 		}
 	}
 	
