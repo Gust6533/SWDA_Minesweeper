@@ -9,7 +9,7 @@ public class HighScoreManager {
 		for(int i = 0; i < size; i++)
 		{
 			list[i] = 0;
-			//System.out.println("Check Here"+list);
+			System.out.println("Check Here"+list);
 		}
 	}
 	
@@ -35,7 +35,7 @@ public class HighScoreManager {
 	public int[] getHighScores()
 	{
 		
-		//System.out.println("HereAlso"+list.toString());
+		System.out.println("HereAlso"+list.toString());
 		return list;
 	}
 	

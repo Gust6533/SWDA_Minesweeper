@@ -1,0 +1,43 @@
+@startuml
+
+Actor Player
+
+Player->Manager:Start_MinesweeperGame()
+Manager->Artist:Load_Game(medium_difficultylevel)
+Manager->Timer:Start_Timer()
+Manager->HighScoreManager:Start_Score_calculation()
+Artist->Board:draw_Board()
+Artist--> Manager: The game is all set to begin.
+Manager--> Player: The game is all set for you to play.
+Player-> Manager: ButtonPress()_ToPlay
+Manager->Artist:Events_started
+Timer--> Manager: Timer has started.
+HighScoreManager--> Manager: The score calculation has started.
+Artist-> Board:Check_If_Space_Clicked
+Artist-> Board:Check_If_Mine_is_Hit
+Board-> Artist:A_Mine_is_Hit
+Artist->Manager:Draw_Lose(" You Lost, would like to try again")
+Player->Manager: Display_Score()
+Player->Manager: Display_Time()
+Manager--> Player:Your time is Display_Time() and your highscore is Display_Score()
+Player->Manager:Restart_the_game()
+Player->Manager: Change_difficulty_Level(Easy)
+Manager->Artist:Load_Game(easy_difficultylevel)
+Manager->Timer:Start_Timer()
+Manager->HighScoreManager:Start_Score_calculation()
+Artist->Board:draw_Board()
+Artist--> Manager: The game is all set to begin.
+Manager--> Player: The game is all set for you to play.
+Player-> Manager: ButtonPress()_ToPlay
+Manager->Artist:Events_started
+Timer--> Manager: Timer has started.
+HighScoreManager--> Manager: The score calculation has started.
+Artist-> Board:Check_If_Space_Clicked
+Artist-> Board:Check_If_Mine_is_Hit
+Board-> Artist:No_Mine_is_hit
+Artist->Manager:Draw_win("Congrats you won!, With a Time of Display_Time() ")
+Player->Manager: Display_Score()
+Player->Manager: Display_Time()
+Manager--> Player:Your time is Display_Time() and your highscore is Display_Score()
+Player->Manager:Game_End()
+@enduml

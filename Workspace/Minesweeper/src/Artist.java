@@ -127,8 +127,7 @@ public class Artist {
 				 * JLabel p =new JLabel();//creating instance of JLabel 
 				 * p.setBounds(300,90,120,60);//x axis, y axis, width, height 
 				 * p.setText("Timer"+Manager.displayTime());
-				 * f.add(p);*/
-				 
+				 * f.add(p);*/			 
 	        	JOptionPane.showMessageDialog(f,Manager.displayTime());	        	
 	        }
 	        
@@ -137,7 +136,8 @@ public class Artist {
 		private void changeDiffculty() {
 			 String difS = JOptionPane.showInputDialog(f,"Change Diffculty, Enter 1 for Easy, 2 for Normal (default) and 3 for hard");
 			 int dif;
-			 try {
+			 try 
+			 {
 				  dif = Integer.valueOf(difS);
 			 }
 			 catch (Exception e)

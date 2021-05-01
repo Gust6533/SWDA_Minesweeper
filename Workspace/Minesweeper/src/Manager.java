@@ -17,7 +17,9 @@ public class Manager {
 	
 	public static void restart()
 	{
+		
 		gameBoard = new Board(currentDifficulty);
+		time.stopTimer();
 		artist.redraw(gameBoard);
 		time.startTimer();
 	}
