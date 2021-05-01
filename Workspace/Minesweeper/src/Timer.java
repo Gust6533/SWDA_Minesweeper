@@ -43,7 +43,7 @@ public class Timer {
 			this.stopTimer();
 		}
 		
-		//System.out.println("TotalTimeTaken"+totalTime / 1000);
+		//System.out.println("TotalTimeTaken"+ totalTime / 1000);
 		return totalTime / 1000;
 	}
 	

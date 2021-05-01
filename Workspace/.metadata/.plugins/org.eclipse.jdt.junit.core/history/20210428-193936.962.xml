@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="BoardTests" project="Minesweeper" tests="5" started="5" failures="0" errors="0" ignored="0">
-  <testsuite name="BoardTests" time="0.035" uniqueid="[engine:junit-jupiter]/[class:BoardTests]">
-    <testcase name="IsMineTest" classname="BoardTests" time="0.019" displayname="IsMineTest()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:IsMineTest()]"/>
-    <testcase name="defaultStateNotClicked" classname="BoardTests" time="0.002" displayname="defaultStateNotClicked()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:defaultStateNotClicked()]"/>
-    <testcase name="ClickedOutOfBoundsTestabove" classname="BoardTests" time="0.003" displayname="ClickedOutOfBoundsTestabove()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:ClickedOutOfBoundsTestabove()]"/>
-    <testcase name="ClickedOutOfBoundsTestNegtive" classname="BoardTests" time="0.001" displayname="ClickedOutOfBoundsTestNegtive()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:ClickedOutOfBoundsTestNegtive()]"/>
-    <testcase name="ClickedAfterSet" classname="BoardTests" time="0.01" displayname="ClickedAfterSet()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:ClickedAfterSet()]"/>
-  </testsuite>
-</testrun>

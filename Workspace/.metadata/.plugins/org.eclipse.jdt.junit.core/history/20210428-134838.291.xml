@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="Tests" project="Minesweeper" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="Tests" time="0.035" uniqueid="[engine:junit-jupiter]/[class:Tests]">
-    <testcase name="defaultStateNotClicked" classname="Tests" time="0.023" displayname="defaultStateNotClicked()" uniqueid="[engine:junit-jupiter]/[class:Tests]/[method:defaultStateNotClicked()]"/>
-    <testcase name="ClickedAfterSet" classname="Tests" time="0.012" displayname="ClickedAfterSet()" uniqueid="[engine:junit-jupiter]/[class:Tests]/[method:ClickedAfterSet()]"/>
-  </testsuite>
-</testrun>
