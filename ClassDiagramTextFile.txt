@@ -1,0 +1,86 @@
+@startuml
+class Manager
+{
+-difficulty currentDifficulty
+-Board gameBoard
+-Artist artist
+-Timer time
+
+
+
++Manager()
++void restart()
++void setDifficulty(diffculty dif)
++void buttonPress(int x, int y)
+-long displayTime()
+-int[] HighScore()
++void StopTimer()
++void main()
+}
+
+
+class Timer
+{
+-long current_time
+-long totalTime
+
++void Timer()
++void Starttimer()
++void StopTimer()
+-long getTime()
+}
+
+
+class Artist
+{
+-JButton array
+-JFrame f
+
+
++Artist(Board draw)
++void redraw(Board draw)
++void draw(Board draw)
++void updateLocationNumber(int x, int y, int mines)
++void drawWin(long l)
++void drawLose()
++void displayHighScores()
++void changeDiffculty()
++void actionPerformed(ActionEvent actionEvent)
++void createImageIcon(path, description)
+}
+
+
+class Board
+{
+-Boolean[][] mines
+-int size
+-Boolean[][] hasBeenClicked
+-int unclickedSpaces
+
++Board()
++Board(diffculty dif)
++Boolean isMine(int x, int y)
++Boolean beenClicked(int x, int y)
++int setClicked(int x, int y)
++int getsize()
++int minesNextTo(int x, int y)
+}
+
+class HighScoreManager
+{
+ -int list[]
+ -int size
+
+ +HighScoreManager()
+ +void addHighScore(int highScore)
+ +int[] getHighScores()
+
+}
+
+class difficulty
+{
+ +enum difficulty
+}
+
+Manager->
+@enduml
