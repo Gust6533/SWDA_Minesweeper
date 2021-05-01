@@ -1,6 +1,6 @@
 # SWDA_Minesweeper
 
-#You can use any programming language you like.
+# You can use any programming language you like.
 ##-- This game is written in Java.
 
 #It does not matter what your project is, but you must have at least 15 user stories.(15%of grade)(related to how users are going to user your application, not developers.You may have developer storiestoo, but you need 15 user stories)
