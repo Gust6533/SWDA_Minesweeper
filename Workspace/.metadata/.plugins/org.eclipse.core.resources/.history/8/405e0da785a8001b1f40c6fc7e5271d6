@@ -1,0 +1,15 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TEST_Timer {
+//Note for testing there is a mine at 1,1
+	
+	@Test
+	void defaultTimer() {
+		Board gameBoard = new Board(diffculty.Easy);
+		assertEquals(false, gameBoard.beenClicked(0, 0), "default state of unclicked");
+	}
+
+
+}

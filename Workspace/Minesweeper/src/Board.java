@@ -15,6 +15,38 @@ public class Board {
 		this(diffculty.Meduim);
 	}
 	
+	//contrustor for testing only that has 2 mines, and medium dif
+	// mines at 1,1 & 1,2
+	public Board (  int mine )
+	{
+		int i, j;
+		int minesPlaces = 0;
+		
+
+		size = 20;
+		mines = new Boolean [size][size];		
+		hasBeenClicked = new Boolean [size][size];	
+		minesPlaces = 13;	
+
+	
+		unclickedSpaces = (size * size) - minesPlaces;
+		//set up game board 
+		//set everything to false
+		for(i = 0; i < size; i ++)
+		{
+			for(j = 0; j < size; j ++)
+			{
+				hasBeenClicked[i] [j] = false;
+				mines[i] [j] = false;
+			}
+			
+		}
+		
+		mines[1][1] = true;
+		mines[1][2] = true;
+		
+	}
+	
 	public Board( diffculty dif )
 	{
 		int i, j;
@@ -62,7 +94,7 @@ public class Board {
 		{
 			i = rand.nextInt(size);
 			j = rand.nextInt(size);
-			if (mines[i][j] == false)
+			if (mines[i][j] == false )
 			{
 				System.out.println("Mine at: " + Integer.toString(i) + "," + Integer.toString(j) );
 				mines[i][j] = true;

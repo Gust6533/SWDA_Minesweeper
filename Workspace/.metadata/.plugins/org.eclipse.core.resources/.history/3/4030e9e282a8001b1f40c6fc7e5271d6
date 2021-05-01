@@ -1,0 +1,23 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class Tests {
+//Note for testing 
+	
+	@Test
+	void defaultStateNotClicked() {
+		Board gameBoard = new Board(diffculty.Easy);
+		assertEquals(false, gameBoard.beenClicked(0, 0), "default state of unclicked");
+	}
+
+	@Test
+	void ClickedAfterSet() {
+		Board gameBoard = new Board(diffculty.Easy);
+		gameBoard.setClicked(0,0);
+		assertEquals(true, gameBoard.beenClicked(0, 0), "retruns clicked after set");
+	}
+	
+	
+	
+}

@@ -1,0 +1,14 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TEST_HighScoreManager {
+//Note for testing there is a mine at 1,1
+	
+	@Test
+	void defaultHighScores() {
+		highScore = new HighScoreManager();		
+		assertEquals(false, gameBoard.beenClicked(0, 0), "default state of unclicked");
+	}
+
+}

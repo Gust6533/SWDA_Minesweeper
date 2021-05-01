@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BoardTests" project="Minesweeper" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="BoardTests" time="0.037" uniqueid="[engine:junit-jupiter]/[class:BoardTests]">
+    <testcase name="IsMineHighBounds" classname="BoardTests" time="0.016" displayname="IsMineHighBounds()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:IsMineHighBounds()]"/>
+    <testcase name="IsMineNegtiveBounds" classname="BoardTests" time="0.001" displayname="IsMineNegtiveBounds()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:IsMineNegtiveBounds()]"/>
+    <testcase name="defaultStateNotClicked" classname="BoardTests" time="0.002" displayname="defaultStateNotClicked()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:defaultStateNotClicked()]"/>
+    <testcase name="ClickedOutOfBoundsTestabove" classname="BoardTests" time="0.002" displayname="ClickedOutOfBoundsTestabove()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:ClickedOutOfBoundsTestabove()]"/>
+    <testcase name="ClickedOutOfBoundsTestNegtive" classname="BoardTests" time="0.001" displayname="ClickedOutOfBoundsTestNegtive()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:ClickedOutOfBoundsTestNegtive()]"/>
+    <testcase name="ClickedAfterSet" classname="BoardTests" time="0.001" displayname="ClickedAfterSet()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:ClickedAfterSet()]"/>
+    <testcase name="IsMineTest11" classname="BoardTests" time="0.014" displayname="IsMineTest11()" uniqueid="[engine:junit-jupiter]/[class:BoardTests]/[method:IsMineTest11()]"/>
+  </testsuite>
+</testrun>

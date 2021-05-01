@@ -1,3 +1,20 @@
+<<<<<<< HEAD
 INDEX VERSION 1.131+D:\Sixth Semester\Java-WorkSpace\SAD_FinalProject\SWDA_Minesweeper\Workspace\.metadata\.plugins\org.eclipse.jdt.core
 1574224381.index
+=======
+INDEX VERSION 1.131+C:\Users\Jake\OneDrive - University of St. Thomas\Software Analysis and Design\SWDA_Minesweeper\Workspace\.metadata\.plugins\org.eclipse.jdt.core
+3860719185.index
+455142439.index
+3420519572.index
+2386439776.index
+902189811.index
+3430460034.index
+3257334978.index
+2774116437.index
+>>>>>>> acf5a42ce69f1cfc088724b932022976060dc94b
 450736440.index
+1485143693.index
+2252635420.index
+693756671.index
+1513308620.index
+1478646387.index
