@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TEST_Timer" project="Minesweeper" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="TEST_Timer" time="0.017" uniqueid="[engine:junit-jupiter]/[class:TEST_Timer]">
-    <testcase name="defaultTimer" classname="TEST_Timer" time="0.017" displayname="defaultTimer()" uniqueid="[engine:junit-jupiter]/[class:TEST_Timer]/[method:defaultTimer()]"/>
-  </testsuite>
-</testrun>

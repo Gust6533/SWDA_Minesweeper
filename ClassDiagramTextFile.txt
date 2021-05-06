@@ -1,20 +1,19 @@
 @startuml
 class Manager
 {
--difficulty currentDifficulty
+-difficulty current difficulty
 -Board gameBoard
 -Artist artist
 -Timer time
-
-
-
-+Manager()
+-HighScoreManager highScore
+ +Manager()
 +void restart()
 +void setDifficulty(diffculty dif)
 +void buttonPress(int x, int y)
 -long displayTime()
 -int[] HighScore()
-+void StopTimer()
++void buttonPress(int x, int y)
++void stopTimer()
 +void main()
 }
 
@@ -23,10 +22,11 @@ class Timer
 {
 -long current_time
 -long totalTime
+-Boolean timer_stopped
 
-+void Timer()
-+void Starttimer()
-+void StopTimer()
++Timer()
++void starttimer()
++void stopTimer()
 -long getTime()
 }
 
@@ -58,7 +58,8 @@ class Board
 -int unclickedSpaces
 
 +Board()
-+Board(diffculty dif)
++Board(int mine)
++Board( diffculty dif )
 +Boolean isMine(int x, int y)
 +Boolean beenClicked(int x, int y)
 +int setClicked(int x, int y)
@@ -82,5 +83,14 @@ class difficulty
  +enum difficulty
 }
 
-Manager->
+Manager->Board
+Manager->Artist
+Manager->Timer
+Manager->HighScoreManager
+Board-->Manager
+Board->Artist
+Artist->Board
+Artist->Manager
+Manager-> difficulty
+difficulty-->Manager
 @enduml

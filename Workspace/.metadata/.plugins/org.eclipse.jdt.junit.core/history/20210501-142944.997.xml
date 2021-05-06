@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TEST_HighScoreManager" project="Minesweeper" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="TEST_HighScoreManager" time="0.023" uniqueid="[engine:junit-jupiter]/[class:TEST_HighScoreManager]">
-    <testcase name="RandomScores" classname="TEST_HighScoreManager" time="0.012" displayname="RandomScores()" uniqueid="[engine:junit-jupiter]/[class:TEST_HighScoreManager]/[method:RandomScores()]"/>
-    <testcase name="defaultHighScores" classname="TEST_HighScoreManager" time="0.004" displayname="defaultHighScores()" uniqueid="[engine:junit-jupiter]/[class:TEST_HighScoreManager]/[method:defaultHighScores()]"/>
-    <testcase name="defaultLowScores" classname="TEST_HighScoreManager" time="0.007" displayname="defaultLowScores()" uniqueid="[engine:junit-jupiter]/[class:TEST_HighScoreManager]/[method:defaultLowScores()]"/>
-  </testsuite>
-</testrun>
