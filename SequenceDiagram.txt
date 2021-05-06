@@ -1,5 +1,4 @@
 @startuml
-
 Actor Player
 
 Player->Manager:Start_MinesweeperGame()
@@ -9,7 +8,7 @@ Manager->Timer:Start_Timer()
 Manager->HighScoreManager:Start_Score_calculation()
 Artist->Board:Draw_Board()
 Board-->Artist:Board is drawn.
-Board-->Manager:Board is Loaded
+Board-->Manager:Board is Loaded.
 Artist--> Manager: The game is all set to begin.
 Manager--> Player: The game is all set for you to play.
 Player-> Manager: ButtonPress()_ToPlay
@@ -25,10 +24,13 @@ Player->Manager: Display_Time()
 Manager--> Player:Your time is Display_Time() and your highscore is Display_Score()
 Player->Manager:Restart_the_game()
 Player->Manager: Change_difficulty_Level(Easy)
-Manager->Artist:Load_Game(easy_difficultylevel)
+Manager->Artist:Load_Game()
+Manager->Board:Load_Board(medium_difficultylevel)
 Manager->Timer:Start_Timer()
 Manager->HighScoreManager:Start_Score_calculation()
 Artist->Board:draw_Board()
+Board-->Artist:Board is drawn.
+Board-->Manager:Board is Loaded.
 Artist--> Manager: The game is all set to begin.
 Manager--> Player: The game is all set for you to play.
 Player-> Manager: ButtonPress()_ToPlay
